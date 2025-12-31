@@ -1,0 +1,10 @@
+-- File: 3_tu134_passengers.sql
+-- Task: List unique passengers flying to Moscow on plane TU-134
+-- Field: name
+
+SELECT DISTINCT p.name AS name
+FROM Passenger p
+JOIN Pass_in_trip ps ON ps.passenger = p.id
+JOIN Trip t ON t.id = ps.trip
+WHERE t.town_to = 'Moscow'
+  AND t.plane = 'TU-134';
