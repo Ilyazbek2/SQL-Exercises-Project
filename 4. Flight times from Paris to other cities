@@ -1,0 +1,8 @@
+-- File: 4_flights_paris.sql
+-- Task: Show flight times from Paris to other cities
+-- Fields: town_to, flight_time (HH:MM:SS)
+
+SELECT town_to, 
+       SEC_TO_TIME(TIMESTAMPDIFF(SECOND, time_out, time_in)) AS flight_time
+FROM Trip
+WHERE town_from = 'Paris';
