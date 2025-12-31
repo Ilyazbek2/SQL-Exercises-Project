@@ -1,5 +1,5 @@
 -- File: 1_flights_from_vladivostok.sql
--- Task: List all companies that operate flights to Vladivostok
+-- Task: List all companies that operate flights to Vladivostok,
 -- Field: name
 
 SELECT DISTINCT c.name
