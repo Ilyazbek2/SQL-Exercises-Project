@@ -1,0 +1,11 @@
+-- File: 6_cheapest_delicacy.sql
+-- Task: Show the delicacy with the lowest unit price
+-- Fields: good_name, unit_price
+
+SELECT g.good_name, p.unit_price
+FROM Goods g
+JOIN GoodTypes gt ON gt.good_type_id = g.type
+JOIN Payments p ON p.good = g.good_id
+WHERE gt.good_type_name = 'delicacies'
+ORDER BY p.unit_price ASC
+LIMIT 1;
