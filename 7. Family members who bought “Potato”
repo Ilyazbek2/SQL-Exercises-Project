@@ -1,0 +1,9 @@
+-- File: 7_family_potato.sql
+-- Task: List family members who bought a good named 'Potato'
+-- Field: member_name
+
+SELECT f.member_name
+FROM FamilyMembers f
+JOIN Payments p ON p.family_member = f.member_id
+JOIN Goods g ON g.good_id = p.good
+WHERE g.good_name = 'Potato';
