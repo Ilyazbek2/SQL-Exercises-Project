@@ -1,0 +1,8 @@
+-- File: 2_rustov_to_moscow_count.sql
+-- Task: Count the number of flights from Rostov to Moscow
+-- Field: count
+
+SELECT COUNT(company) AS count
+FROM Trip
+WHERE town_from = 'Rostov'
+  AND town_to = 'Moscow';
