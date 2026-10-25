@@ -1,6 +1,5 @@
 -- File: 6_cheapest_delicacy.sql
 -- Task: Show the delicacy with the lowest unit price
--- Fields: good_name, unit_price
 
 SELECT g.good_name, p.unit_price
 FROM Goods g
