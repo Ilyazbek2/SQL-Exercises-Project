@@ -1,7 +1,5 @@
 # SQL Exercises Project
 
-This repository contains solutions to SQL exercises based on flight, passenger, and payment data.
-
 ## Structure
 
 - `1_flights_from_vladivostok.sql` – Companies operating flights from Vladivostok
