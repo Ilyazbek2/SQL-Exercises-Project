@@ -1,6 +1,5 @@
 -- File: 5_flights_between_10_and_14.sql
 -- Task: Show all flights on Jan 1, 1900 with departure time between 10:00 and 14:59
--- Fields: all (*)
 
 SELECT *
 FROM Trip
